@@ -4,6 +4,7 @@ from discord import DMChannel
 import asyncio
 import random
 from discord.utils import get
+importc os
 
 import game as game
 
@@ -725,4 +726,5 @@ async def on_message(message):
         await message.channel.send(embed=embed)
 
 
-client.run("NzE2MDQyNTU0ODcyOTU0OTM1.XtGBRQ.iQwNM3tzXVgq5yS7N-jhe0BoKfI")
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
